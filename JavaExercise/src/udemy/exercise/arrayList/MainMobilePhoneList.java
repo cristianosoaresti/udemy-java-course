@@ -80,7 +80,7 @@ public class MainMobilePhoneList {
         if (returnOk){
             System.out.println("Successfully updated!");
         }else{
-            System.out.println("The contact informed was not found!");
+            System.out.println("The contact informed was not found or maybe already exist!");
         }
     }
 

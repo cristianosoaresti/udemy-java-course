@@ -52,7 +52,8 @@ public class MobilePhoneList {
 
     public boolean updateContact(String oldName, String newName, long contactPhoneNumber){
         int contactIn = getContactPosition(oldName);
-        if (contactIn >= 0){
+        int oldContactIn = getContactPosition(newName);
+        if (contactIn >= 0 && oldContactIn < 0){
             person = new Person();
             person.setName(newName);
             person.setContactPhoneNumber(contactPhoneNumber);
